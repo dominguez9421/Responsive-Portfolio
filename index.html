@@ -1,63 +1,60 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!doctype html>
+<html lang="en-us">
 
 <head>
-    <title>About me</title>
-    <link rel="stylesheet" type="text/css" href="./assests/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assests/css/style.css">
+  <meta charset="UTF-8">
+  <title>About | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="assests/css/style/style.css">
+  <link rel="stylesheet" type="text/css" href="assests/css/style/reset.css">
 </head>
+<!-- it is responsive to all of the points asked for but i broke my footer and could not fix it-->
 
 <body>
-    
-    <header>
-        <!-- could not get name logo to align with about me text i changed the align- left to differnt px but it would affect all pages-->
-        <section id="logo">
-			<h1>Jorge Dominguez</h1>
-		</section>
-		<nav>
-			<ul class="navbar">
-				<li><a href="index.html">About</a></li>
-			
-				<li><a href="portfolio.html">Portfolio</a></li>
-				
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-    </header>
 
-
-
-
-    <div class="content">
-        <div class="main">
-            <h2 class="page-title">About Me</h2>
-
-
-            <img class="portfolio-pic" src="assests/images/portfolio-pic.jpg" alt="JorgeDominguez"/>
-            
-            
-            <p>Hello! my name is, Jorge
-            Dominguez this is part of a big assigment in my life as this is my first time I am creating my own website.
-            I hope, I can definetly go back to this example and see how easy it was compared to all the stress and
-                frustration I am feeling as I am writing this.
-                As far as this project goes I am to talk a little about myself.</p><br>
-            <p>I am 27 years old, I graduated with my Bachelor's in Information Systems from Donnelly College. I was
-                Born in Guadalajara Jalisco home of the tequila! and I was brought to the age of 13 to the United States
-                and grew up here.<br><br>
-                It was a bit hard learning a new language but by my early years as a teenager I was able to pick up the
-                langauge quickly and it took me about a year and a half to fully speak it. After graduatuion my goal was
-                to become a system engineer however, I have always liked code and wanted to learn more about it and the
-                KU Boot camp program seemed to put those skills to the test and I hope to become a software engineer
-                instead.</p>
-        </div>
+  <header id="masthead">
+    <div class="container">
+      <!-- will only show my first name but when the screen is zommed in to the lowest resolution my full name will appear I did not know how to fix it -->
+      <!-- full name will only appear if there is no space in between and will disappear if space-->
+      <a href="index.html" id="logo">JorgeDominguez</a>
+      <nav>
+        <!-- my nav bar works correctly with the resposivness but does not go back to full format when expanded to the full page-->
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
-     <!-- I could not lower the copyright symbol lower to the bottom of the page this issue applies to all three of my pages-->
-    <footer class="bottom">
-        <h5>Copyright ©</h5>
-    </footer>
+  </header>
 
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>About Me</h1>
 
+      <img src="assests/css/style/images/portfolio-pic.jpg" height=200px width-150px class="auth-image" alt="Jorge JorgeDominguez">
 
+      <p>Hello! my name is, Jorge
+        Dominguez this is part of a big assigment in my life as this is my first time I am creating my own website.
+        I hope, I can definetly go back to this example and see how easy it was compared to all the stress and
+            frustration I am feeling as I am writing this.
+            As far as this project goes I am to talk a little about myself.</p><br>
+        <p>I am 27 years old, I graduated with my Bachelor's in Information Systems from Donnelly College. I was
+            Born in Guadalajara Jalisco home of the tequila! and I was brought to the age of 13 to the United States
+            and grew up here.<br><br>
+            It was a bit hard learning a new language but by my early years as a teenager I was able to pick up the
+            langauge quickly and it took me about a year and a half to fully speak it. After graduatuion my goal was
+            to become a system engineer however, I have always liked code and wanted to learn more about it and the
+            KU Boot camp program seemed to put those skills to the test and I hope to become a software engineer
+            instead.</p>
+
+    </section>
+
+    
+  </div>
+
+  <footer>
+    <div class="container">
+      &copy; Copyright 2019
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -1,63 +1,54 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<title>Contact</title>
-<link rel="stylesheet" type="text/css" href="./assests/css/reset.css">
-<link rel="stylesheet" type="text/css" href="assests/css/style.css"/>
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="assests/css/style/style.css">
+  <link rel="stylesheet" type="text/css" href="assests/css/style/reset.css">
+</head>
+<!-- footer eneded up in the contact from container and i could not get it to go back to the bottom without affecting the other two pages -->
+
 <body>
-    <header>
-		<!-- header padding should be increader to at least 19px -->
-		<!-- logo name not aligned the size needs to be adjusted-->
-        <section id="logo">
-			<h1>Jorge Dominguez</h1>
-		</section>
-		<nav>
-			<ul class="navbar">
-				<li><a href="index.html">About</a></li>
-				<li>|</li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li>|</li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
-		</nav>
-    
-    </header>
 
- 
-<!-- the message email and name need to be aligned with the prespective box-->
+  <header id="masthead">
     <div class="container">
-		<!-- the size for the form needs to be smaller -->
-		<section id="form">
-			<h2 class="padme">Contact</h2>
-			<hr class="heavy">
-			<form action="">
-			<fieldset>
-				<legend></legend>
-				<label for="name">Name</label>
-				<br>
-				<input type="text" id="name" name="fullname" placeholder="John Smith">
-				<br>
-				<label for="email">Email</label>
-				<br>
-				<input type="email" id="email" name="fullemail" placeholder="example@gmail.com" required>
-				<br>
-				<label for="message">Message</label>
-				<br>
-				<input type="textarea" id="message">
-				<br>
-				<input type="submit">
-			</fieldset>	
-			</form>
-		</section>
+      <!-- will only show my first name but when the screen is zommed in to the lowest resolution my full name will appear I did not know how to fix it -->
+      <a href="index.html" id="logo">Jorge Dominguez</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
     </div>
+  </header>
 
-    <footer class="bottom">
-            <h5>Copyright ©</h5> 
-    </footer>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-    
-
-
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+  <footer>
+    <div class="container">
+      Copyright &copy; Copyright 2019
+    </div>
+  </footer>
 </body>
-</html> 
 
-
+</html>
